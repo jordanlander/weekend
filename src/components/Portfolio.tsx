@@ -1,15 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Calendar, MapPin } from "lucide-react";
-import portfolioExample1 from "@/assets/portfolio-example-1.jpg";
-import portfolioExample2 from "@/assets/portfolio-example-2.jpg";
-import portfolioExample3 from "@/assets/portfolio-example-3.jpg";
+import integrityEvImage from "@/assets/integrity-ev-solutions.jpg";
+import girardArtsImage from "@/assets/girard-arts.jpg";
+import wileyTruckingImage from "@/assets/wiley-trucking.jpg";
 
 const Portfolio = () => {
 const projects = [
     {
       title: "Integrity EV Solutions",
       category: "EV Charging",
-      image: portfolioExample1,
+      image: integrityEvImage,
       description: "Professional EV charging site with simple service options, quote, and contact flow.",
       testimonial: "Site + Google Ads boosted monthly installs.",
       website: "www.integrityevsolutions.com",
@@ -18,7 +18,7 @@ const projects = [
     {
       title: "Girard Arts", 
       category: "Community Arts",
-      image: portfolioExample2,
+      image: girardArtsImage,
       description: "Community showcase with event sign-ups & donate functionality.",
       testimonial: "Increased event participation by 40%",
       website: "girardarts.org",
@@ -27,7 +27,7 @@ const projects = [
     {
       title: "Wiley Trucking",
       category: "Transportation",
-      image: portfolioExample3,
+      image: wileyTruckingImage,
       description: "Services & request quote flow for local trucking company.",
       testimonial: "More qualified leads in first month",
       website: "www.wileytrucking.com",
