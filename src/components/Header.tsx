@@ -21,11 +21,11 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <img 
               src="/lovable-uploads/b834458e-12f7-4355-bed8-1867d75b00e9.png" 
-              alt="One Weekend Websites Logo" 
+              alt="One-Weekend Websites Logo" 
               className="h-8 w-8"
             />
             <div className="text-xl font-bold text-primary">
-              One Weekend Websites
+              One-Weekend Websites
             </div>
           </div>
           

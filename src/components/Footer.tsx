@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <div className="text-xl font-bold mb-4">One Weekend Websites</div>
+            <div className="text-xl font-bold mb-4">One-Weekend Websites</div>
             <p className="text-background/80 mb-4">
               Professional websites for local businesses delivered in 48 hours. 
               $499 flat rate. You own everything.

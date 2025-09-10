@@ -119,7 +119,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <input type="hidden" name="_subject" value="New One Weekend Websites Inquiry" />
+              <input type="hidden" name="_subject" value="New One-Weekend Websites Inquiry" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_next" value="https://oneweekendwebsites.com/thank-you" />
               

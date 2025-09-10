@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, DollarSign } from "lucide-react";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { ArrowRight, Clock, DollarSign, ChevronDown } from "lucide-react";
 // Using real photo uploaded by user
 
 const Hero = () => {
@@ -13,7 +14,10 @@ const Hero = () => {
               <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
                 <Clock className="h-6 w-6 text-accent-foreground" />
               </div>
-              <span className="text-accent font-semibold text-lg">One Weekend. One Website.</span>
+              <div>
+                <span className="text-accent font-semibold text-lg">One Weekend. One Website.</span>
+                <div className="text-accent/80 text-sm mt-1">Trust that shows • Traffic grows • Revenue flows</div>
+              </div>
             </div>
             
             <h1 className="text-hero mb-6">
@@ -45,29 +49,39 @@ const Hero = () => {
             </div>
             
             <div className="mb-8">
-              <p className="text-white/80 text-sm mb-4">More options:</p>
-              <div className="flex flex-col sm:flex-row gap-2 text-sm">
-                <button 
-                  onClick={() => window.open('https://square.link/u/JCKqtjo5', '_blank')}
-                  className="text-accent hover:text-accent/80 underline"
-                >
-                  Reserve with $50 deposit
-                </button>
-                <span className="text-white/60 hidden sm:inline">•</span>
-                <button 
-                  onClick={() => window.open('https://square.link/u/u08vlvAR', '_blank')}
-                  className="text-accent hover:text-accent/80 underline"
-                >
-                  Pay in full + add-ons
-                </button>
-                <span className="text-white/60 hidden sm:inline">•</span>
-                <button 
-                  onClick={() => window.open('https://square.link/u/wL2hwxEx', '_blank')}
-                  className="text-accent hover:text-accent/80 underline"
-                >
-                  Subscribe to Care (monthly)
-                </button>
-              </div>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <Button 
+                    variant="ghost" 
+                    className="text-white/80 hover:text-white text-sm p-0 h-auto font-normal"
+                  >
+                    More options
+                    <ChevronDown className="ml-1 h-4 w-4" />
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-64 bg-popover/95 backdrop-blur-sm border-white/20">
+                  <div className="space-y-3">
+                    <button 
+                      onClick={() => window.open('https://square.link/u/JCKqtjo5', '_blank')}
+                      className="block w-full text-left text-sm hover:text-primary transition-colors"
+                    >
+                      Reserve with $50 deposit
+                    </button>
+                    <button 
+                      onClick={() => window.open('https://square.link/u/u08vlvAR', '_blank')}
+                      className="block w-full text-left text-sm hover:text-primary transition-colors"
+                    >
+                      Pay in full + add-ons
+                    </button>
+                    <button 
+                      onClick={() => window.open('https://square.link/u/wL2hwxEx', '_blank')}
+                      className="block w-full text-left text-sm hover:text-primary transition-colors"
+                    >
+                      Subscribe to Care (monthly)
+                    </button>
+                  </div>
+                </PopoverContent>
+              </Popover>
             </div>
             
             <div className="flex flex-wrap items-center gap-4 text-sm text-white/80">

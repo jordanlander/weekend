@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-section-title mb-6">
-            Why <span className="text-primary">One Weekend Websites?</span>
+            Why <span className="text-primary">One-Weekend Websites?</span>
           </h2>
           <p className="text-lead max-w-2xl mx-auto">
             I help local businesses get online fast with clean, effective websites 
@@ -52,7 +52,7 @@ const About = () => {
         <div className="bg-card-gradient rounded-3xl p-8 shadow-md animate-scale-in">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-semibold mb-4">
-              "I started One Weekend Websites because I saw too many local businesses struggling online."
+              "I started One-Weekend Websites because I saw too many local businesses struggling online."
             </h3>
             <p className="text-muted-foreground mb-6">
               Most web developers want to build complex, expensive sites that take months. 
