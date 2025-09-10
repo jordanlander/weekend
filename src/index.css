@@ -154,6 +154,16 @@ All colors MUST be HSL.
     @apply transition-all duration-300;
     @apply transform hover:scale-105;
   }
+
+  .btn-hero-cta {
+    @apply bg-primary text-primary-foreground hover:bg-primary-light;
+    @apply border-2 border-white;
+    @apply px-8 py-4 rounded-xl font-semibold text-lg;
+    @apply shadow-lg hover:shadow-xl;
+    @apply transition-all duration-300;
+    @apply transform hover:scale-105;
+    @apply animate-pulse;
+  }
   
   .btn-hero-outline {
     @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground;
