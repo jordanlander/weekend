@@ -30,8 +30,8 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button 
-                className="btn-accent" 
+              <Button
+                className="btn-hero-cta"
                 size="lg"
                 onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
               >
