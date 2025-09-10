@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Calendar, MapPin } from "lucide-react";
+import { ExternalLink, Calendar, MapPin, Scissors, ShoppingBag, Leaf, Church, Palette } from "lucide-react";
 // Using real website screenshots provided by user
 
 const Portfolio = () => {
@@ -90,22 +90,91 @@ const projects = [
         </div>
         
         <div className="text-center animate-scale-in">
-          <div className="bg-card-gradient rounded-2xl p-8 shadow-md max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-6">Perfect For</h3>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="space-y-2">
-                <div className="font-medium">• Barbers & salons</div>
-                <div className="font-medium">• Thrift & vintage shops</div>
+          <div className="bg-card-gradient rounded-2xl p-8 shadow-md max-w-6xl mx-auto">
+            <h3 className="text-2xl font-semibold mb-2">Who this is for</h3>
+            <p className="text-muted-foreground mb-8">Local businesses that need a clean one-pager that converts—this weekend.</p>
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              {/* Barbers & salons */}
+              <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-2 text-foreground mb-3">
+                  <Scissors className="h-5 w-5 text-primary" />
+                  <h4 className="font-semibold">Barbers & salons</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">Tap-to-book and map reviews from a single, fast page.</p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Hours, location, pricing</li>
+                  <li>• Google "Call" & "Directions" buttons</li>
+                </ul>
               </div>
-              <div className="space-y-2">
-                <div className="font-medium">• Lawn care & landscaping</div>
-                <div className="font-medium">• Churches & boosters</div>
+
+              {/* Thrift & vintage */}
+              <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-2 text-foreground mb-3">
+                  <ShoppingBag className="h-5 w-5 text-primary" />
+                  <h4 className="font-semibold">Thrift & vintage shops</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">Show today's finds. Drive foot traffic—not just likes.</p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• "New arrivals" gallery</li>
+                  <li>• Hours, parking, social links</li>
+                </ul>
               </div>
-              <div className="space-y-2">
-                <div className="font-medium">• Etsy & makers</div>
-                <div className="font-medium">• Local services</div>
+
+              {/* Lawn care & landscaping */}
+              <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-2 text-foreground mb-3">
+                  <Leaf className="h-5 w-5 text-primary" />
+                  <h4 className="font-semibold">Lawn care & landscaping</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">Quote requests that include address, lawn size, and photos.</p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• "Request a quote" form</li>
+                  <li>• Before/after gallery</li>
+                </ul>
+              </div>
+
+              {/* Churches & boosters */}
+              <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-2 text-foreground mb-3">
+                  <Church className="h-5 w-5 text-primary" />
+                  <h4 className="font-semibold">Churches & boosters</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">Sign-ups, donations, and event info in one simple page.</p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Online giving link</li>
+                  <li>• Events & contact</li>
+                </ul>
+              </div>
+
+              {/* Etsy & makers */}
+              <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-2 text-foreground mb-3">
+                  <Palette className="h-5 w-5 text-primary" />
+                  <h4 className="font-semibold">Etsy & makers</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">A legit home base that links out to your shop and socials.</p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Featured product grid</li>
+                  <li>• Contact & custom orders</li>
+                </ul>
+              </div>
+
+              {/* Local services */}
+              <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-2 text-foreground mb-3">
+                  <MapPin className="h-5 w-5 text-primary" />
+                  <h4 className="font-semibold">Local services</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">Calls, quotes, and directions without the platform lock-in.</p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Click-to-call & directions</li>
+                  <li>• Fast load, SEO basics</li>
+                </ul>
               </div>
             </div>
+            
+            <p className="text-sm text-muted-foreground mb-6">Built for Erie/Lake City businesses. Launch in 48 hours. You own everything.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button 
                 className="btn-hero"
