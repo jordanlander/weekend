@@ -18,7 +18,12 @@ const Header = () => {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
+            <img 
+              src="/lovable-uploads/b834458e-12f7-4355-bed8-1867d75b00e9.png" 
+              alt="One Weekend Websites Logo" 
+              className="h-8 w-8"
+            />
             <div className="text-xl font-bold text-primary">
               One Weekend Websites
             </div>
@@ -36,7 +41,7 @@ const Header = () => {
               onClick={() => scrollToSection('portfolio')}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Examples
+              Work
             </button>
             <button 
               onClick={() => scrollToSection('process')}
@@ -45,10 +50,16 @@ const Header = () => {
               Process
             </button>
             <button 
-              onClick={() => scrollToSection('testimonials')}
+              onClick={() => scrollToSection('pricing')}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Reviews
+              Pricing
+            </button>
+            <button 
+              onClick={() => scrollToSection('faq')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              FAQ
             </button>
           </nav>
           
@@ -61,8 +72,11 @@ const Header = () => {
               <Phone className="h-4 w-4 mr-1" />
               (814) 580-8040
             </a>
-            <Button className="btn-accent">
-              Book Call
+            <Button 
+              className="btn-accent"
+              onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+            >
+              Book free 15-min Fit Check
             </Button>
           </div>
           
@@ -89,7 +103,7 @@ const Header = () => {
                 onClick={() => scrollToSection('portfolio')}
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors w-full text-left"
               >
-                Examples
+                Work
               </button>
               <button 
                 onClick={() => scrollToSection('process')}
@@ -98,10 +112,16 @@ const Header = () => {
                 Process
               </button>
               <button 
-                onClick={() => scrollToSection('testimonials')}
+                onClick={() => scrollToSection('pricing')}
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors w-full text-left"
               >
-                Reviews
+                Pricing
+              </button>
+              <button 
+                onClick={() => scrollToSection('faq')}
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors w-full text-left"
+              >
+                FAQ
               </button>
               <div className="flex flex-col space-y-2 px-3 pt-2">
                 <a 
@@ -111,8 +131,11 @@ const Header = () => {
                   <Phone className="h-4 w-4 mr-1" />
                   (814) 580-8040
                 </a>
-                <Button className="btn-accent w-full">
-                  Book Call
+                <Button 
+                  className="btn-accent w-full"
+                  onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+                >
+                  Book free 15-min Fit Check
                 </Button>
               </div>
             </div>

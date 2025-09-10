@@ -3,7 +3,9 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
-import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -21,8 +23,14 @@ const Index = () => {
         <section id="process">
           <Process />
         </section>
-        <section id="testimonials">
-          <Testimonials />
+        <section id="pricing">
+          <Pricing />
+        </section>
+        <section id="faq">
+          <FAQ />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </main>
       <Footer />

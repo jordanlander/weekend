@@ -4,26 +4,20 @@ const Process = () => {
   const steps = [
     {
       icon: MessageSquare,
-      title: "15-Minute Fit Check",
-      description: "We chat about your business, goals, and what you need. No pressure, just honest advice about whether we're a good fit.",
+      title: "Fit check (15m)",
+      description: "Quick call to see if we're a good fit + $50 deposit + you send logo/photos",
       timeline: "Day 0"
     },
     {
       icon: Palette,
-      title: "Design & Build",
-      description: "I create your website using proven templates optimized for local businesses. Clean, fast, and conversion-focused.",
+      title: "Building + preview", 
+      description: "I build your site and send you a preview link to review",
       timeline: "Day 1"
     },
     {
-      icon: CheckCircle,
-      title: "Review & Refine",
-      description: "You review the site and request any changes. I make adjustments to ensure it perfectly represents your business.",
-      timeline: "Day 2"
-    },
-    {
       icon: Rocket,
-      title: "Launch & Support",
-      description: "Your site goes live with full ownership transferred to you. Plus 30 days of support for any questions or tweaks.",
+      title: "Launch on domain + Google",
+      description: "Site goes live on your domain, gets indexed by Google + you get 2 image swaps",
       timeline: "Day 2"
     }
   ];
@@ -41,7 +35,7 @@ const Process = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {steps.map((step, index) => {
             const IconComponent = step.icon;
             return (

@@ -26,27 +26,62 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button className="btn-accent" size="lg">
+              <Button 
+                className="btn-accent" 
+                size="lg"
+                onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+              >
                 Book Free 15-min Fit Check
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="btn-hero-outline">
-                See Local Examples
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="btn-hero-outline"
+                onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                See local examples
               </Button>
             </div>
             
-            <div className="flex items-center gap-6 text-sm text-white/80">
+            <div className="mb-8">
+              <p className="text-white/80 text-sm mb-4">More options:</p>
+              <div className="flex flex-col sm:flex-row gap-2 text-sm">
+                <button 
+                  onClick={() => window.open('https://square.link/u/JCKqtjo5', '_blank')}
+                  className="text-accent hover:text-accent/80 underline"
+                >
+                  Reserve with $50 deposit
+                </button>
+                <span className="text-white/60 hidden sm:inline">•</span>
+                <button 
+                  onClick={() => window.open('https://square.link/u/u08vlvAR', '_blank')}
+                  className="text-accent hover:text-accent/80 underline"
+                >
+                  Pay in full + add-ons
+                </button>
+                <span className="text-white/60 hidden sm:inline">•</span>
+                <button 
+                  onClick={() => window.open('https://square.link/u/wL2hwxEx', '_blank')}
+                  className="text-accent hover:text-accent/80 underline"
+                >
+                  Subscribe to Care (monthly)
+                </button>
+              </div>
+            </div>
+            
+            <div className="flex flex-wrap items-center gap-4 text-sm text-white/80">
               <div className="flex items-center gap-2">
                 <DollarSign className="h-4 w-4" />
-                <span>$499 flat rate</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4" />
-                <span>48-hour delivery</span>
+                <span>$499 flat</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-                <span>Full ownership</span>
+                <span>You own it</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="h-4 w-4" />
+                <span>Launch in 48 hrs</span>
               </div>
             </div>
           </div>
