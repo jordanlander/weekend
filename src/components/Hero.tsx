@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, DollarSign } from "lucide-react";
-import jordanHeadshot from "@/assets/jordan-headshot.jpg";
+// Using real photo uploaded by user
 
 const Hero = () => {
   return (
@@ -91,7 +91,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl transform rotate-3"></div>
               <img 
-                src={jordanHeadshot}
+                src="/lovable-uploads/4a0b5af4-6f35-4781-b680-3d24a14d6789.png"
                 alt="Jordan Lander - Web Developer"
                 className="relative rounded-3xl shadow-hero w-full max-w-md mx-auto lg:max-w-lg"
               />
