@@ -18,41 +18,127 @@ const Refunds = () => {
       </header>
 
       <main className="container mx-auto max-w-4xl px-6 py-12">
-        <h1 className="text-4xl font-bold mb-8">Refund Policy</h1>
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Fair & Clear Refund Policy
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            We believe in transparency and fairness for both our clients and our business
+          </p>
+        </div>
         
-        <div className="prose prose-slate max-w-none">
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Our Commitment</h2>
-          <p className="mb-4">
-            We stand behind our work. If you're not satisfied with your website, we'll work with you to make it right.
-          </p>
+        <div className="space-y-8">
+          {/* Our Promise */}
+          <div className="bg-card rounded-lg p-8 border border-border">
+            <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
+              <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                <span className="text-primary font-bold">✓</span>
+              </div>
+              Our Promise to You
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              We're committed to delivering a professional website that meets your expectations. 
+              If we don't deliver what we promised, we'll make it right or refund your money.
+            </p>
+          </div>
 
-          <h3 className="text-xl font-semibold mt-6 mb-3">Refund Timeline</h3>
-          <ul className="list-disc pl-6 mb-4">
-            <li><strong>Before work begins:</strong> Full refund of deposit</li>
-            <li><strong>During development:</strong> 50% refund if no satisfactory progress</li>
-            <li><strong>After completion:</strong> No refunds, but unlimited revisions until satisfied</li>
-          </ul>
+          {/* Refund Terms */}
+          <div className="bg-card rounded-lg p-8 border border-border">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Refund Terms</h2>
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <div className="w-6 h-6 bg-green-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-green-600 text-sm font-bold">1</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Before Work Begins</h4>
+                  <p className="text-muted-foreground">
+                    <strong>$50 deposit is non-refundable</strong> once we begin discovery and planning. 
+                    This covers our initial consultation and protects against time-wasters.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4">
+                <div className="w-6 h-6 bg-yellow-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-yellow-600 text-sm font-bold">2</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">During Development</h4>
+                  <p className="text-muted-foreground">
+                    50% refund available if we fail to make satisfactory progress within 48 hours.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4">
+                <div className="w-6 h-6 bg-blue-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-blue-600 text-sm font-bold">3</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">After Completion</h4>
+                  <p className="text-muted-foreground">
+                    <strong>3 rounds of major revisions</strong> included within 30 days of delivery. 
+                    Additional revisions available at $50/hour. No refunds after final approval.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-xl font-semibold mt-6 mb-3">What We Guarantee</h3>
-          <ul className="list-disc pl-6 mb-4">
-            <li>Website delivered within 48 hours</li>
-            <li>Mobile-responsive design</li>
-            <li>Basic SEO optimization</li>
-            <li>Fast loading times</li>
-            <li>Professional appearance</li>
-          </ul>
+          {/* What's Guaranteed */}
+          <div className="bg-primary/5 rounded-lg p-8 border border-primary/20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">What We Guarantee</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-center gap-3">
+                <span className="text-primary">✓</span>
+                <span className="text-foreground">48-hour delivery</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-primary">✓</span>
+                <span className="text-foreground">Mobile-responsive design</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-primary">✓</span>
+                <span className="text-foreground">SEO optimization</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-primary">✓</span>
+                <span className="text-foreground">Fast loading speeds</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-primary">✓</span>
+                <span className="text-foreground">Professional appearance</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-primary">✓</span>
+                <span className="text-foreground">Full ownership of files</span>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-xl font-semibold mt-6 mb-3">Refund Process</h3>
-          <p className="mb-4">
-            To request a refund, contact us within the eligible timeframe. Refunds processed within 5-7 business days.
-          </p>
-
-          <h3 className="text-xl font-semibold mt-6 mb-3">Non-Refundable Items</h3>
-          <ul className="list-disc pl-6 mb-4">
-            <li>Third-party services (domain registration, hosting setup)</li>
-            <li>Additional hours beyond included scope</li>
-            <li>Rush delivery fees</li>
-          </ul>
+          {/* Non-Refundable */}
+          <div className="bg-muted/50 rounded-lg p-8 border border-border">
+            <h2 className="text-2xl font-bold text-foreground mb-4">Non-Refundable Items</h2>
+            <ul className="space-y-2 text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="text-muted-foreground/60 mt-1">•</span>
+                <span>$50 initial deposit (covers consultation time)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-muted-foreground/60 mt-1">•</span>
+                <span>Third-party services (domain, hosting, stock photos)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-muted-foreground/60 mt-1">•</span>
+                <span>Rush delivery fees</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-muted-foreground/60 mt-1">•</span>
+                <span>Additional revisions beyond included rounds</span>
+              </li>
+            </ul>
+          </div>
 
           <div className="mt-12 p-6 bg-muted rounded-lg">
             <h4 className="font-semibold mb-2">Need a refund or have questions?</h4>
