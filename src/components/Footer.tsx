@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -126,28 +127,28 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="text-background/80 hover:text-background transition-colors text-left"
+                <Link 
+                  to="/terms"
+                  className="text-background/80 hover:text-background transition-colors"
                 >
                   Terms
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="text-background/80 hover:text-background transition-colors text-left"
+                <Link 
+                  to="/refunds"
+                  className="text-background/80 hover:text-background transition-colors"
                 >
                   Refunds
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="text-background/80 hover:text-background transition-colors text-left"
+                <Link 
+                  to="/privacy"
+                  className="text-background/80 hover:text-background transition-colors"
                 >
                   Privacy
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
