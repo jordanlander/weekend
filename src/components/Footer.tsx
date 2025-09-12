@@ -126,19 +126,28 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="text-background/80 hover:text-background transition-colors text-left"
+                >
                   Terms
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="text-background/80 hover:text-background transition-colors text-left"
+                >
                   Refunds
-                </a>
+                </button>
               </li>
               <li>
-                <a href="/privacy.html" className="text-background/80 hover:text-background transition-colors">
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="text-background/80 hover:text-background transition-colors text-left"
+                >
                   Privacy
-                </a>
+                </button>
               </li>
             </ul>
           </div>
