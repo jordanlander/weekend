@@ -18,71 +18,163 @@ const Privacy = () => {
       </header>
 
       <main className="container mx-auto max-w-4xl px-6 py-12">
-        <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
-        
-        <div className="prose prose-slate max-w-none">
-          <p className="text-lg mb-6">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Privacy Policy
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            How we collect, use, and protect your information
+          </p>
+          <p className="text-sm text-muted-foreground mt-4">
             <strong>Last updated:</strong> January 2025
           </p>
+        </div>
+        
+        <div className="space-y-8">
+          {/* Information We Collect */}
+          <div className="bg-card rounded-lg p-8 border border-border">
+            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
+              <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                <span className="text-primary font-bold">📊</span>
+              </div>
+              Information We Collect
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-semibold text-foreground mb-4">Contact Information</h3>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary text-sm">•</span>
+                    <span className="text-muted-foreground">Name and email address</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary text-sm">•</span>
+                    <span className="text-muted-foreground">Phone number (when provided)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary text-sm">•</span>
+                    <span className="text-muted-foreground">Business details for quotes</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="text-lg font-semibold text-foreground mb-4">Technical Data</h3>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary text-sm">•</span>
+                    <span className="text-muted-foreground">Website usage analytics</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary text-sm">•</span>
+                    <span className="text-muted-foreground">IP address & browser info</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-primary text-sm">•</span>
+                    <span className="text-muted-foreground">Pages visited & time spent</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Information We Collect</h2>
-          <h3 className="text-xl font-semibold mt-6 mb-3">Contact Information</h3>
-          <ul className="list-disc pl-6 mb-4">
-            <li>Name and email address (from contact forms)</li>
-            <li>Phone number (when provided)</li>
-            <li>Business details (for project quotes)</li>
-          </ul>
+          {/* How We Use Information */}
+          <div className="bg-primary/5 rounded-lg p-8 border border-primary/20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">How We Use Your Information</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3">
+                <span className="text-primary mt-1">✓</span>
+                <span className="text-foreground">Respond to inquiries and provide quotes</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-primary mt-1">✓</span>
+                <span className="text-foreground">Communicate about project progress</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-primary mt-1">✓</span>
+                <span className="text-foreground">Improve our website and services</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-primary mt-1">✓</span>
+                <span className="text-foreground">Send occasional updates (opt-out anytime)</span>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-xl font-semibold mt-6 mb-3">Technical Data</h3>
-          <ul className="list-disc pl-6 mb-4">
-            <li>Website usage analytics (via Google Analytics)</li>
-            <li>IP address and browser information</li>
-            <li>Pages visited and time spent</li>
-          </ul>
+          {/* Information Sharing */}
+          <div className="bg-card rounded-lg p-8 border border-border">
+            <h2 className="text-2xl font-bold text-foreground mb-4">Information Sharing</h2>
+            <p className="text-muted-foreground mb-4">
+              <strong>We never sell, rent, or share your personal information</strong> with third parties, except in these limited cases:
+            </p>
+            <div className="space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="text-yellow-600 text-sm">⚠️</span>
+                <span className="text-muted-foreground">When required by law</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-yellow-600 text-sm">⚠️</span>
+                <span className="text-muted-foreground">To protect our rights or safety</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-600 text-sm">✅</span>
+                <span className="text-muted-foreground">With your explicit consent</span>
+              </div>
+            </div>
+          </div>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">How We Use Your Information</h2>
-          <ul className="list-disc pl-6 mb-4">
-            <li>Respond to inquiries and provide quotes</li>
-            <li>Communicate about project progress</li>
-            <li>Improve our website and services</li>
-            <li>Send occasional updates (you can unsubscribe anytime)</li>
-          </ul>
+          {/* Security & Cookies */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <h3 className="text-xl font-bold text-foreground mb-4">Data Security</h3>
+              <p className="text-muted-foreground">
+                We use industry-standard security measures to protect your information. However, no internet transmission is 100% secure.
+              </p>
+            </div>
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <h3 className="text-xl font-bold text-foreground mb-4">Cookies</h3>
+              <p className="text-muted-foreground">
+                We use cookies for analytics and to improve user experience. You can disable cookies in your browser settings.
+              </p>
+            </div>
+          </div>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Information Sharing</h2>
-          <p className="mb-4">
-            We never sell, rent, or share your personal information with third parties, except:
-          </p>
-          <ul className="list-disc pl-6 mb-4">
-            <li>When required by law</li>
-            <li>To protect our rights or safety</li>
-            <li>With your explicit consent</li>
-          </ul>
+          {/* Your Rights */}
+          <div className="bg-muted/50 rounded-lg p-8 border border-border">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Your Rights</h2>
+            <p className="text-muted-foreground mb-4">You have the right to:</p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-foreground">Request access to your personal data</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-foreground">Request correction of inaccurate data</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-foreground">Request deletion of your data</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-foreground">Opt out of communications</span>
+              </div>
+            </div>
+          </div>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Data Security</h2>
-          <p className="mb-4">
-            We use industry-standard security measures to protect your information. However, no internet transmission is 100% secure.
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Cookies</h2>
-          <p className="mb-4">
-            We use cookies for analytics and to improve user experience. You can disable cookies in your browser settings.
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Your Rights</h2>
-          <p className="mb-4">You have the right to:</p>
-          <ul className="list-disc pl-6 mb-4">
-            <li>Request access to your personal data</li>
-            <li>Request correction of inaccurate data</li>
-            <li>Request deletion of your data</li>
-            <li>Opt out of communications</li>
-          </ul>
-
-          <div className="mt-12 p-6 bg-muted rounded-lg">
-            <h4 className="font-semibold mb-2">Questions about this policy?</h4>
-            <p className="text-sm text-muted-foreground">
+          {/* Contact */}
+          <div className="bg-card rounded-lg p-8 border border-primary/20 bg-primary/5">
+            <h4 className="font-semibold mb-2 text-foreground">Questions about this policy?</h4>
+            <p className="text-muted-foreground">
               Contact us at{" "}
-              <a href="mailto:jordanlander@gmail.com" className="text-primary hover:underline">
+              <a href="mailto:jordanlander@gmail.com" className="text-primary hover:underline font-medium">
                 jordanlander@gmail.com
+              </a>{" "}
+              or call{" "}
+              <a href="tel:18145808040" className="text-primary hover:underline font-medium">
+                (814) 580-8040
               </a>
             </p>
           </div>
