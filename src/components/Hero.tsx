@@ -26,8 +26,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lead text-white/90 mb-8 max-w-lg">
-              One clean, mobile-first page. Clear offer. Google-ready. 
-              Ownership stays with you. Perfect for local businesses ready to grow online.
+              Your website, live in 48 hours. Looks great on any phone, shows up on Google, and you keep full ownership. Perfect for local businesses ready to grow.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
