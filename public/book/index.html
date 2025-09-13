@@ -16,7 +16,23 @@
     gtag('config', 'G-SX1PBTTNDW');
   </script>
   <script>
-    window.location.replace("https://cal.com/jordanlander/fit-check-15?utm_source=domain&utm_medium=redirect&utm_campaign=book_short");
+    // Multiple redirect methods for better mobile compatibility
+    const redirectUrl = "https://cal.com/jordanlander/fit-check-15?utm_source=domain&utm_medium=redirect&utm_campaign=book_short";
+    
+    // Immediate redirect attempt
+    window.location.replace(redirectUrl);
+    
+    // Fallback redirect after small delay for mobile browsers
+    setTimeout(function() {
+      window.location.href = redirectUrl;
+    }, 100);
+    
+    // Additional fallback for stubborn browsers
+    setTimeout(function() {
+      if (window.location.href.indexOf('cal.com') === -1) {
+        window.location.assign(redirectUrl);
+      }
+    }, 500);
   </script>
 </head>
 <body>
