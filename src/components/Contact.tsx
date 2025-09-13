@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -112,6 +112,21 @@ const Contact = () => {
                 >
                   Reserve with $50 Deposit
                 </Button>
+              </div>
+              
+              <div className="mt-6 pt-6 border-t border-border">
+                <h5 className="font-semibold mb-3">Connect with us</h5>
+                <div className="flex gap-3">
+                  <a 
+                    href="https://www.facebook.com/oneweekendwebsites/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-xl flex items-center justify-center transition-colors"
+                    aria-label="Follow us on Facebook"
+                  >
+                    <Facebook className="h-5 w-5 text-primary" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
