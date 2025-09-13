@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Facebook } from "lucide-react";
+import { Facebook, Home } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -44,6 +44,15 @@ const Footer = () => {
                   aria-label="Follow us on Facebook"
                 >
                   <Facebook className="h-5 w-5 text-background" />
+                </a>
+                <a 
+                  href="https://nextdoor.com/pages/one-weekend-websites-lake-city-pa/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-background/10 hover:bg-background/20 rounded-xl flex items-center justify-center transition-colors"
+                  aria-label="Follow us on Nextdoor"
+                >
+                  <Home className="h-5 w-5 text-background" />
                 </a>
               </div>
             </div>
