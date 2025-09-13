@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -74,9 +75,9 @@ const Header = () => {
             </a>
             <Button 
               className="btn-accent"
-              onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+              asChild
             >
-              Book free 15-min Fit Check
+              <Link to="/book">Book free 15-min Fit Check</Link>
             </Button>
           </div>
           
@@ -133,9 +134,9 @@ const Header = () => {
                 </a>
                 <Button 
                   className="btn-accent w-full"
-                  onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+                  asChild
                 >
-                  Book free 15-min Fit Check
+                  <Link to="/book">Book free 15-min Fit Check</Link>
                 </Button>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Shield, DollarSign } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   return (
@@ -74,9 +75,9 @@ const Pricing = () => {
               <Button 
                 variant="ghost" 
                 className="w-full"
-                onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+                asChild
               >
-                Book free fit check first
+                <Link to="/book">Book free fit check first</Link>
               </Button>
             </div>
           </div>

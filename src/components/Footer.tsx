@@ -96,9 +96,9 @@ const Footer = () => {
                 variant="outline" 
                 size="sm" 
                 className="w-full text-foreground border-background/20 hover:bg-background/10"
-                onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+                asChild
               >
-                Book
+                <Link to="/book">Book</Link>
               </Button>
               <Button 
                 variant="outline" 

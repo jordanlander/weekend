@@ -4,6 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Facebook } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -101,9 +102,9 @@ const Contact = () => {
               <div className="space-y-3">
                 <Button 
                   className="w-full btn-accent"
-                  onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+                  asChild
                 >
-                  Book Free 15-min Fit Check
+                  <Link to="/book">Book Free 15-min Fit Check</Link>
                 </Button>
                 <Button 
                   variant="outline" 

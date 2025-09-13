@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { ArrowRight, Clock, DollarSign, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 // Using real photo uploaded by user
 
 const Hero = () => {
@@ -33,10 +34,12 @@ const Hero = () => {
               <Button
                 className="btn-hero-cta"
                 size="lg"
-                onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+                asChild
               >
-                Book Free 15-min Fit Check
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <Link to="/book">
+                  Book Free 15-min Fit Check
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
               <Button 
                 variant="outline" 

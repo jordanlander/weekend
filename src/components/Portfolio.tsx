@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Calendar, MapPin, Scissors, ShoppingBag, Leaf, Church, Palette } from "lucide-react";
+import { Link } from "react-router-dom";
 // Using real website screenshots provided by user
 
 const Portfolio = () => {
@@ -178,9 +179,9 @@ const projects = [
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button 
                 className="btn-hero"
-                onClick={() => window.open('https://cal.com/jordanlander/fit-check-15', '_blank')}
+                asChild
               >
-                Book Free Fit Check
+                <Link to="/book">Book Free Fit Check</Link>
               </Button>
               <Button 
                 variant="outline"
