@@ -62,6 +62,11 @@ const FAQ = () => {
       answer:
         "Absolutely—if you’re on the Care Plan, I’ll take care of domain renewal ($20–$70/year depending on TLD). You’ll never need to lift a finger or worry about your site going offline.",
     },
+    {
+      question: "Do you only build on weekends?",
+      answer:
+        "Nope. We build in 48 hours, whether that’s Monday–Tuesday or Friday–Saturday. We called it One-Weekend Websites because the process is short, focused, and fast.",
+    },
   ];
 
   return (
