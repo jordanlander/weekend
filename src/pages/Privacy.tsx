@@ -26,7 +26,7 @@ const Privacy = () => {
             How we collect, use, and protect your information
           </p>
           <p className="text-sm text-muted-foreground mt-4">
-            <strong>Last updated:</strong> January 2025
+            <strong>Business Entity:</strong> JCLander LLC | <strong>Last updated:</strong> January 2025
           </p>
         </div>
         
@@ -161,6 +161,17 @@ const Privacy = () => {
                 <span className="text-primary mt-1">•</span>
                 <span className="text-foreground">Opt out of communications</span>
               </div>
+            </div>
+            
+            <div className="mt-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
+              <h3 className="text-lg font-semibold text-foreground mb-3">California & European Residents</h3>
+              <p className="text-muted-foreground">
+                If you are a resident of California or the European Union, you have additional rights regarding your personal information under local privacy laws. These may include the right to request details about the data we collect, request deletion of your data, and object to certain uses. To exercise these rights or ask questions, please contact us at{" "}
+                <a href="mailto:jordanlander@gmail.com" className="text-primary hover:underline font-medium">
+                  jordanlander@gmail.com
+                </a>
+                .
+              </p>
             </div>
           </div>
 

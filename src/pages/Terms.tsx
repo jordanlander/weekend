@@ -25,6 +25,9 @@ const Terms = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Clear, fair terms for our web development services
           </p>
+          <p className="text-sm text-muted-foreground mt-4">
+            <strong>Business Entity:</strong> JCLander LLC
+          </p>
         </div>
         
         <div className="space-y-8">
@@ -114,8 +117,7 @@ const Terms = () => {
           <div className="bg-muted/50 rounded-lg p-8 border border-border">
             <h2 className="text-2xl font-bold text-foreground mb-4">Liability & Disclaimer</h2>
             <p className="text-muted-foreground">
-              Services provided "as is" with professional care and attention. JCLander LLC is not liable for indirect damages, 
-              lost profits, or consequential damages arising from the use of our services.
+              Services are provided "as is" with professional care and attention. JCLander LLC is not liable for indirect, incidental, or consequential damages arising from the use of our services. Liability, if any, is strictly limited to the total amount you paid for the specific service provided.
             </p>
           </div>
 
