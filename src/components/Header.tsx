@@ -1,10 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const firstMenuItemRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      firstMenuItemRef.current?.focus();
+    } else {
+      menuButtonRef.current?.focus();
+    }
+  }, [isMenuOpen]);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -103,18 +113,26 @@ const Header = () => {
           
           {/* Mobile Menu Button */}
           <button
+            ref={menuButtonRef}
+            aria-label="Toggle navigation"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
-        
+
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="mobile-menu md:hidden border-t border-border bg-white/95 backdrop-blur-sm">
+          <div
+            id="mobile-menu"
+            className="mobile-menu md:hidden border-t border-border bg-white/95 backdrop-blur-sm"
+          >
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <button 
+              <button
+                ref={firstMenuItemRef}
                 onClick={() => scrollToSection('about')}
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors w-full text-left"
               >
