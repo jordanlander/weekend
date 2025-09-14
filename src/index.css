@@ -163,8 +163,11 @@ All colors MUST be HSL.
   button, .btn, .cta { max-width: 100%; }
 
   /* off-canvas menu */
-  .nav-drawer, .mobile-menu {
-    position: fixed; top: 0; right: 0; bottom: 0;
+  .nav-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
     width: min(85dvw, 360px);        /* not 100vw */
     transform: translateX(100%);     /* closed */
   }
