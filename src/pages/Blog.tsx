@@ -9,7 +9,7 @@ const blogPosts = [
   {
     title: "7 Mistakes You're Making with Your Business Website (and How to Fix Them)",
     excerpt: "Your website is your digital storefront. It's working 24/7, making first impressions while you sleep. But most business websites are making critical mistakes that drive customers straight to competitors.",
-    date: "January 15, 2024",
+    date: "September 14, 2025",
     readTime: "8 min read",
     image: "https://cdn.marblism.com/sImsguOYOzd.webp",
     slug: "7-website-mistakes"
