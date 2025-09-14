@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin, Facebook, Home } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Home, Linkedin, Building2 } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
@@ -135,6 +135,24 @@ const Contact = () => {
                     aria-label="Follow us on Nextdoor"
                   >
                     <Home className="h-5 w-5 text-primary" />
+                  </a>
+                  <a 
+                    href="https://www.linkedin.com/company/oneweekendwebsites/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-xl flex items-center justify-center transition-colors"
+                    aria-label="Follow us on LinkedIn"
+                  >
+                    <Linkedin className="h-5 w-5 text-primary" />
+                  </a>
+                  <a 
+                    href="https://share.google/yyFsQaHPgPrCvrnPb" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-xl flex items-center justify-center transition-colors"
+                    aria-label="View our Google Business Profile"
+                  >
+                    <Building2 className="h-5 w-5 text-primary" />
                   </a>
                 </div>
               </div>
