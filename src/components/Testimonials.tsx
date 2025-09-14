@@ -50,12 +50,12 @@ const Testimonials = () => {
             >
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                  <Star aria-hidden="true" key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
               
               <div className="relative mb-6">
-                <Quote className="h-8 w-8 text-primary/20 absolute -top-2 -left-2" />
+                <Quote aria-hidden="true" className="h-8 w-8 text-primary/20 absolute -top-2 -left-2" />
                 <p className="text-muted-foreground italic relative z-10 pl-6">
                   "{testimonial.text}"
                 </p>
