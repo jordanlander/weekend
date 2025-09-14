@@ -19,7 +19,7 @@ const Contact = () => {
     const formData = new FormData(form);
     
     try {
-      const response = await fetch("https://formsubmit.co/jordanlander@gmail.com", {
+      const response = await fetch("https://formsubmit.co/jordan@oneweekendwebsites.com", {
         method: "POST",
         body: formData
       });
@@ -80,8 +80,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
-                  <a href="mailto:jordanlander@gmail.com" className="text-primary hover:underline">
-                    jordanlander@gmail.com
+                  <a href="mailto:jordan@oneweekendwebsites.com" className="text-primary hover:underline">
+                    jordan@oneweekendwebsites.com
                   </a>
                 </div>
               </div>

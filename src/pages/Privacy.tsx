@@ -167,8 +167,8 @@ const Privacy = () => {
               <h3 className="text-lg font-semibold text-foreground mb-3">California & European Residents</h3>
               <p className="text-muted-foreground">
                 If you are a resident of California or the European Union, you have additional rights regarding your personal information under local privacy laws. These may include the right to request details about the data we collect, request deletion of your data, and object to certain uses. To exercise these rights or ask questions, please contact us at{" "}
-                <a href="mailto:jordanlander@gmail.com" className="text-primary hover:underline font-medium">
-                  jordanlander@gmail.com
+                <a href="mailto:jordan@oneweekendwebsites.com" className="text-primary hover:underline font-medium">
+                  jordan@oneweekendwebsites.com
                 </a>
                 .
               </p>
@@ -180,8 +180,8 @@ const Privacy = () => {
             <h4 className="font-semibold mb-2 text-foreground">Questions about this policy?</h4>
             <p className="text-muted-foreground">
               Contact us at{" "}
-              <a href="mailto:jordanlander@gmail.com" className="text-primary hover:underline font-medium">
-                jordanlander@gmail.com
+              <a href="mailto:jordan@oneweekendwebsites.com" className="text-primary hover:underline font-medium">
+                jordan@oneweekendwebsites.com
               </a>{" "}
               or call{" "}
               <a href="tel:18145808040" className="text-primary hover:underline font-medium">

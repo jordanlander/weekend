@@ -144,8 +144,8 @@ const Refunds = () => {
             <h4 className="font-semibold mb-2">Need a refund or have questions?</h4>
             <p className="text-sm text-muted-foreground">
               Contact Jordan directly at{" "}
-              <a href="mailto:jordanlander@gmail.com" className="text-primary hover:underline">
-                jordanlander@gmail.com
+              <a href="mailto:jordan@oneweekendwebsites.com" className="text-primary hover:underline">
+                jordan@oneweekendwebsites.com
               </a>{" "}
               or call{" "}
               <a href="tel:18145808040" className="text-primary hover:underline">

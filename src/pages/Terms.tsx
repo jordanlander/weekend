@@ -126,8 +126,8 @@ const Terms = () => {
             <h4 className="font-semibold mb-2 text-foreground">Questions about these terms?</h4>
             <p className="text-muted-foreground">
               Contact us at{" "}
-              <a href="mailto:jordanlander@gmail.com" className="text-primary hover:underline font-medium">
-                jordanlander@gmail.com
+              <a href="mailto:jordan@oneweekendwebsites.com" className="text-primary hover:underline font-medium">
+                jordan@oneweekendwebsites.com
               </a>{" "}
               or call{" "}
               <a href="tel:18145808040" className="text-primary hover:underline font-medium">
