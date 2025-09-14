@@ -70,6 +70,12 @@ const Header = () => {
             >
               Pricing
             </button>
+            <Link 
+              to="/blog"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Blog
+            </Link>
             <button 
               onClick={() => scrollToSection('faq')}
               className="text-foreground hover:text-primary transition-colors"
@@ -132,6 +138,13 @@ const Header = () => {
               >
                 Pricing
               </button>
+              <Link 
+                to="/blog"
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors w-full text-left"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
+              </Link>
               <button 
                 onClick={() => scrollToSection('faq')}
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors w-full text-left"
