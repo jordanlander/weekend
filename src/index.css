@@ -289,3 +289,42 @@ All colors MUST be HSL.
     transform: scale(1);
   }
 }
+
+/* Form styles for better mobile UX */
+.form-container {
+  @apply space-y-6 p-6;
+}
+
+.form-field {
+  @apply space-y-2;
+}
+
+.form-field label {
+  @apply text-sm font-medium text-foreground;
+}
+
+/* Mobile-optimized form elements */
+@media (max-width: 768px) {
+  .form-container {
+    @apply space-y-8 p-4;
+  }
+  
+  .form-field {
+    @apply space-y-3;
+  }
+  
+  .form-field label {
+    @apply text-base;
+  }
+}
+
+/* Mobile-first button improvements */
+.btn-mobile {
+  @apply h-12 px-6 py-3 text-base font-medium min-w-[44px] min-h-[44px];
+}
+
+@media (max-width: 768px) {
+  .btn-mobile {
+    @apply h-14 px-8 py-4 text-lg;
+  }
+}
