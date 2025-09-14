@@ -9,7 +9,7 @@ slug: "7-website-mistakes"
 
 # 7 Mistakes You're Making with Your Business Website (and How to Fix Them)
 
-![heroImage](https://cdn.marblism.com/sImsguOYOzd.webp)
+![Business owner reviewing website on laptop](https://cdn.marblism.com/sImsguOYOzd.webp)
 
 Your website is your digital storefront. It's working 24/7, making first impressions while you sleep. But here's the thing: most business websites are making critical mistakes that drive customers straight to competitors.
 
@@ -31,7 +31,7 @@ Your visitors shouldn't have to hunt around to figure out your business. They're
 
 Example: Instead of "Innovative Solutions for Modern Challenges," try "We Fix Broken Air Conditioners in Under 2 Hours."
 
-![image_1](https://cdn.marblism.com/5oQh58y9uKi.webp)
+![Confused visitor searching for what a business offers](https://cdn.marblism.com/5oQh58y9uKi.webp)
 
 ## Mistake #2: Your Site Looks Terrible on Mobile
 
@@ -63,7 +63,7 @@ Heavy images and bloated code are usually the culprits. Your beautiful hero vide
 
 Fast sites rank higher in Google and convert better. It's a win-win.
 
-![image_2](https://cdn.marblism.com/y3M8q7DtNeC.webp)
+![Mobile phone showing slow-loading website](https://cdn.marblism.com/y3M8q7DtNeC.webp)
 
 ## Mistake #4: You're Missing Basic Security
 
@@ -95,7 +95,7 @@ When people can't find what they need, they leave. It's that simple.
 
 Think like a customer, not like someone who knows your business inside and out.
 
-![image_3](https://cdn.marblism.com/Tb7HI_YYYM6.webp)
+![Overwhelming website navigation menu](https://cdn.marblism.com/Tb7HI_YYYM6.webp)
 
 ## Mistake #6: You Look Like Every Other Business
 
@@ -129,7 +129,7 @@ Many "modern" website features actually hurt your conversions. Pretty doesn't al
 
 Your website's job is to convert visitors into customers, not win design awards.
 
-![image_4](https://cdn.marblism.com/BjwO6RVALba.webp)
+![Generic template-style business website](https://cdn.marblism.com/BjwO6RVALba.webp)
 
 ## The Real Cost of These Mistakes
 
@@ -153,7 +153,7 @@ Your website should work as hard as you do. When it's doing its job right, you'l
 
 Don't let these common mistakes keep your business invisible online. Fix them, and watch your website finally start working for you instead of against you.
 
-![image_5](https://cdn.marblism.com/yYkm5oR_Llf.webp)
+![Customer celebrating website success](https://cdn.marblism.com/yYkm5oR_Llf.webp)
 
 The best website isn't the fanciest: it's the one that turns visitors into customers. Keep it simple, make it fast, and always put your customers first.
 
