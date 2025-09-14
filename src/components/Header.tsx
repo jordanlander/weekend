@@ -33,7 +33,7 @@ const Header = () => {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img 
               src="/lovable-uploads/b834458e-12f7-4355-bed8-1867d75b00e9.png" 
               alt="One-Weekend Websites Logo" 
@@ -42,7 +42,7 @@ const Header = () => {
             <div className="text-xl font-bold text-primary">
               One-Weekend Websites
             </div>
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
