@@ -43,7 +43,7 @@ const Footer = () => {
                   className="w-10 h-10 bg-background/10 hover:bg-background/20 rounded-xl flex items-center justify-center transition-colors"
                   aria-label="Follow us on Facebook"
                 >
-                  <Facebook className="h-5 w-5 text-background" />
+                  <Facebook aria-hidden="true" className="h-5 w-5 text-background" />
                 </a>
                 <a 
                   href="https://nextdoor.com/pages/one-weekend-websites-lake-city-pa/" 
@@ -52,7 +52,7 @@ const Footer = () => {
                   className="w-10 h-10 bg-background/10 hover:bg-background/20 rounded-xl flex items-center justify-center transition-colors"
                   aria-label="Follow us on Nextdoor"
                 >
-                  <Home className="h-5 w-5 text-background" />
+                  <Home aria-hidden="true" className="h-5 w-5 text-background" />
                 </a>
                 <a 
                   href="https://www.linkedin.com/company/oneweekendwebsites/" 
@@ -61,7 +61,7 @@ const Footer = () => {
                   className="w-10 h-10 bg-background/10 hover:bg-background/20 rounded-xl flex items-center justify-center transition-colors"
                   aria-label="Follow us on LinkedIn"
                 >
-                  <Linkedin className="h-5 w-5 text-background" />
+                  <Linkedin aria-hidden="true" className="h-5 w-5 text-background" />
                 </a>
                 <a 
                   href="https://share.google/yyFsQaHPgPrCvrnPb" 
@@ -70,7 +70,7 @@ const Footer = () => {
                   className="w-10 h-10 bg-background/10 hover:bg-background/20 rounded-xl flex items-center justify-center transition-colors"
                   aria-label="View our Google Business Profile"
                 >
-                  <Building2 className="h-5 w-5 text-background" />
+                  <Building2 aria-hidden="true" className="h-5 w-5 text-background" />
                 </a>
               </div>
             </div>

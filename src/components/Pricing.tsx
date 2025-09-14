@@ -20,7 +20,7 @@ const Pricing = () => {
           <div className="bg-card-gradient rounded-3xl p-8 shadow-lg border-2 border-primary/20 animate-slide-up">
             <div className="text-center mb-6">
               <div className="w-16 h-16 bg-primary text-primary-foreground rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <DollarSign className="h-8 w-8" />
+                <DollarSign aria-hidden="true" className="h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold mb-2">Complete One-Page Website</h3>
               <div className="text-4xl font-bold text-primary mb-2">$499</div>
@@ -29,30 +29,30 @@ const Pricing = () => {
             
             <div className="space-y-3 mb-8">
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <CheckCircle aria-hidden="true" className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                 <span>Mobile-first design</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <CheckCircle aria-hidden="true" className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                 <span>Copy polish & CTA</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <CheckCircle aria-hidden="true" className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                 <span>Domain & Google indexing</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <CheckCircle aria-hidden="true" className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                 <span>2 image swaps</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <CheckCircle aria-hidden="true" className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                 <span>No monthly fees</span>
               </div>
             </div>
             
             <div className="bg-accent/10 p-4 rounded-lg mb-6">
               <div className="flex items-center gap-2 mb-2">
-                <Shield className="h-4 w-4 text-accent" />
+                <Shield aria-hidden="true" className="h-4 w-4 text-accent" />
                 <span className="font-semibold text-accent">Guarantee</span>
               </div>
               <p className="text-sm">20% off remaining balance if I miss the launch window.</p>
@@ -92,19 +92,19 @@ const Pricing = () => {
             
             <div className="space-y-3 mb-8">
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <CheckCircle aria-hidden="true" className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                 <span>DNS/HTTPS stewardship</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <CheckCircle aria-hidden="true" className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                 <span>Uptime watch</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <CheckCircle aria-hidden="true" className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                 <span>Monthly check-ins</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <CheckCircle aria-hidden="true" className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                 <span>30 min/month content updates</span>
               </div>
             </div>

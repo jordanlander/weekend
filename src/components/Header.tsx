@@ -90,7 +90,7 @@ const Header = () => {
               href="tel:18145808040"
               className="flex items-center text-primary hover:text-primary-light transition-colors"
             >
-              <Phone className="h-4 w-4 mr-1" />
+              <Phone aria-hidden="true" className="h-4 w-4 mr-1" />
               (814) 580-8040
             </a>
             <Button 
@@ -105,8 +105,9 @@ const Header = () => {
           <button
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? <X aria-hidden="true" className="h-6 w-6" /> : <Menu aria-hidden="true" className="h-6 w-6" />}
           </button>
         </div>
         
@@ -156,7 +157,7 @@ const Header = () => {
                   href="tel:18145808040"
                   className="flex items-center text-primary hover:text-primary-light transition-colors"
                 >
-                  <Phone className="h-4 w-4 mr-1" />
+                  <Phone aria-hidden="true" className="h-4 w-4 mr-1" />
                   (814) 580-8040
                 </a>
                 <Button 

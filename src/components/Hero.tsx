@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="animate-fade-in">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                <Clock className="h-6 w-6 text-accent-foreground" />
+                <Clock aria-hidden="true" className="h-6 w-6 text-accent-foreground" />
               </div>
               <div>
                 <span className="text-accent font-semibold text-lg">One Weekend. One Website.</span>
@@ -37,7 +37,7 @@ const Hero = () => {
               >
                 <Link to="/book">
                   Book Free 15-min Fit Check
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight aria-hidden="true" className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button 
@@ -58,7 +58,7 @@ const Hero = () => {
                     className="text-white/80 hover:text-white text-sm p-0 h-auto font-normal"
                   >
                     More options
-                    <ChevronDown className="ml-1 h-4 w-4" />
+                    <ChevronDown aria-hidden="true" className="ml-1 h-4 w-4" />
                   </Button>
                 </PopoverTrigger>
                 <PopoverContent className="w-64 bg-popover/95 backdrop-blur-sm border-white/20">
@@ -88,7 +88,7 @@ const Hero = () => {
             
             <div className="flex flex-wrap items-center gap-4 text-sm text-white/80">
               <div className="flex items-center gap-2">
-                <DollarSign className="h-4 w-4" />
+                <DollarSign aria-hidden="true" className="h-4 w-4" />
                 <span>$499 flat</span>
               </div>
               <div className="flex items-center gap-2">
@@ -96,7 +96,7 @@ const Hero = () => {
                 <span>You own it</span>
               </div>
               <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4" />
+                <Clock aria-hidden="true" className="h-4 w-4" />
                 <span>Launch in 48 hrs</span>
               </div>
             </div>

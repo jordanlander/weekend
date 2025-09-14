@@ -17,7 +17,7 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="text-center animate-slide-up">
             <div className="w-16 h-16 bg-primary text-primary-foreground rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Zap className="h-8 w-8" />
+              <Zap aria-hidden="true" className="h-8 w-8" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Lightning Fast</h3>
             <p className="text-muted-foreground">
@@ -28,7 +28,7 @@ const About = () => {
           
           <div className="text-center animate-slide-up" style={{ animationDelay: '0.1s' }}>
             <div className="w-16 h-16 bg-accent text-accent-foreground rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Award className="h-8 w-8" />
+              <Award aria-hidden="true" className="h-8 w-8" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Proven Results</h3>
             <p className="text-muted-foreground">
@@ -39,7 +39,7 @@ const About = () => {
           
           <div className="text-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <div className="w-16 h-16 bg-primary text-primary-foreground rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Users className="h-8 w-8" />
+              <Users aria-hidden="true" className="h-8 w-8" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Local Focus</h3>
             <p className="text-muted-foreground">

@@ -63,7 +63,7 @@ const projects = [
                   {project.category}
                 </div>
                 <div className="absolute top-4 right-4 bg-white/90 text-primary px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
-                  <Calendar className="h-3 w-3" />
+                  <Calendar aria-hidden="true" className="h-3 w-3" />
                   {project.deliveryTime}
                 </div>
               </div>
@@ -82,7 +82,7 @@ const projects = [
                   className="w-full"
                   onClick={() => window.open(`https://${project.website}`, '_blank')}
                 >
-                  <ExternalLink className="mr-2 h-4 w-4" />
+                  <ExternalLink aria-hidden="true" className="mr-2 h-4 w-4" />
                   View Live Site
                 </Button>
               </div>
@@ -99,7 +99,7 @@ const projects = [
               {/* Barbers & salons */}
               <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-2 text-foreground mb-3">
-                  <Scissors className="h-5 w-5 text-primary" />
+                  <Scissors aria-hidden="true" className="h-5 w-5 text-primary" />
                   <h4 className="font-semibold">Barbers & salons</h4>
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">Tap-to-book and map reviews from a single, fast page.</p>
@@ -112,7 +112,7 @@ const projects = [
               {/* Thrift & vintage */}
               <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-2 text-foreground mb-3">
-                  <ShoppingBag className="h-5 w-5 text-primary" />
+                  <ShoppingBag aria-hidden="true" className="h-5 w-5 text-primary" />
                   <h4 className="font-semibold">Thrift & vintage shops</h4>
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">Show today's finds. Drive foot traffic—not just likes.</p>
@@ -125,7 +125,7 @@ const projects = [
               {/* Lawn care & landscaping */}
               <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-2 text-foreground mb-3">
-                  <Leaf className="h-5 w-5 text-primary" />
+                  <Leaf aria-hidden="true" className="h-5 w-5 text-primary" />
                   <h4 className="font-semibold">Lawn care & landscaping</h4>
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">Quote requests that include address, lawn size, and photos.</p>
@@ -138,7 +138,7 @@ const projects = [
               {/* Churches & boosters */}
               <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-2 text-foreground mb-3">
-                  <Church className="h-5 w-5 text-primary" />
+                  <Church aria-hidden="true" className="h-5 w-5 text-primary" />
                   <h4 className="font-semibold">Churches & boosters</h4>
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">Sign-ups, donations, and event info in one simple page.</p>
@@ -151,7 +151,7 @@ const projects = [
               {/* Etsy & makers */}
               <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-2 text-foreground mb-3">
-                  <Palette className="h-5 w-5 text-primary" />
+                  <Palette aria-hidden="true" className="h-5 w-5 text-primary" />
                   <h4 className="font-semibold">Etsy & makers</h4>
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">A legit home base that links out to your shop and socials.</p>
@@ -164,7 +164,7 @@ const projects = [
               {/* Local services */}
               <div className="bg-background rounded-xl border p-5 hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-2 text-foreground mb-3">
-                  <MapPin className="h-5 w-5 text-primary" />
+                  <MapPin aria-hidden="true" className="h-5 w-5 text-primary" />
                   <h4 className="font-semibold">Local services</h4>
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">Calls, quotes, and directions without the platform lock-in.</p>

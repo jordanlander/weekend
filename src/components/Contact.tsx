@@ -64,7 +64,7 @@ const Contact = () => {
             <div className="space-y-6 mb-8">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center">
-                  <Phone className="h-6 w-6" />
+                  <Phone aria-hidden="true" className="h-6 w-6" />
                 </div>
                 <div>
                   <div className="font-semibold">Phone</div>
@@ -76,7 +76,7 @@ const Contact = () => {
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-accent text-accent-foreground rounded-xl flex items-center justify-center">
-                  <Mail className="h-6 w-6" />
+                  <Mail aria-hidden="true" className="h-6 w-6" />
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
@@ -88,7 +88,7 @@ const Contact = () => {
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center">
-                  <MapPin className="h-6 w-6" />
+                  <MapPin aria-hidden="true" className="h-6 w-6" />
                 </div>
                 <div>
                   <div className="font-semibold">Location</div>
@@ -125,7 +125,7 @@ const Contact = () => {
                     className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-xl flex items-center justify-center transition-colors"
                     aria-label="Follow us on Facebook"
                   >
-                    <Facebook className="h-5 w-5 text-primary" />
+                    <Facebook aria-hidden="true" className="h-5 w-5 text-primary" />
                   </a>
                   <a 
                     href="https://nextdoor.com/pages/one-weekend-websites-lake-city-pa/" 
@@ -134,7 +134,7 @@ const Contact = () => {
                     className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-xl flex items-center justify-center transition-colors"
                     aria-label="Follow us on Nextdoor"
                   >
-                    <Home className="h-5 w-5 text-primary" />
+                    <Home aria-hidden="true" className="h-5 w-5 text-primary" />
                   </a>
                   <a 
                     href="https://www.linkedin.com/company/oneweekendwebsites/" 
@@ -143,7 +143,7 @@ const Contact = () => {
                     className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-xl flex items-center justify-center transition-colors"
                     aria-label="Follow us on LinkedIn"
                   >
-                    <Linkedin className="h-5 w-5 text-primary" />
+                    <Linkedin aria-hidden="true" className="h-5 w-5 text-primary" />
                   </a>
                   <a 
                     href="https://share.google/yyFsQaHPgPrCvrnPb" 
@@ -152,7 +152,7 @@ const Contact = () => {
                     className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-xl flex items-center justify-center transition-colors"
                     aria-label="View our Google Business Profile"
                   >
-                    <Building2 className="h-5 w-5 text-primary" />
+                    <Building2 aria-hidden="true" className="h-5 w-5 text-primary" />
                   </a>
                 </div>
               </div>
