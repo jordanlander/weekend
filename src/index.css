@@ -135,19 +135,54 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  /* —— viewport-safe defaults —— */
+  * { box-sizing: border-box; }
+  html, body { overflow-x: auto; }   /* no global clipping */
+  :root { --page-pad: clamp(16px, 4vw, 28px); }
+
   html {
     scroll-behavior: smooth;
-    overflow-x: clip;
   }
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: var(--font-family);
-    overflow-x: clip;
   }
 }
 
 @layer components {
+  /* containers & sections (no 100vw) */
+  .container, .section, .hero, .site-shell, .footer, .form-wrap {
+    width: 100%;
+    max-width: 100dvw;               /* safe in webviews */
+    padding-inline: var(--page-pad);
+  }
+
+  /* images, media, and buttons can't force overflow */
+  img, video, svg, canvas { display: block; max-width: 100%; height: auto; }
+  button, .btn, .cta { max-width: 100%; }
+
+  /* off-canvas menu */
+  .nav-drawer, .mobile-menu {
+    position: fixed; top: 0; right: 0; bottom: 0;
+    width: min(85dvw, 360px);        /* not 100vw */
+    transform: translateX(100%);     /* closed */
+  }
+
+  /* hero badges / floating CTAs (keep inside edge) */
+  .hero-badge, .floating-cta {
+    right: clamp(12px, 3vw, 24px);
+    max-width: calc(100% - 2 * var(--page-pad));
+  }
+
+  /* forms (prevent calc-based overflows) */
+  .form input, .form textarea, .form select,
+  input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
   /* Hero Button Variants */
   .btn-hero {
     @apply bg-primary text-primary-foreground hover:bg-primary-light;
