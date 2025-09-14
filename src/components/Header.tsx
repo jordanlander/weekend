@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300 overflow-x-clip">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -112,7 +112,7 @@ const Header = () => {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-border bg-white/95 backdrop-blur-sm">
+          <div className="md:hidden border-t border-border bg-white/95 backdrop-blur-sm max-w-[min(85dvw,360px)] ml-auto">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button 
                 onClick={() => scrollToSection('about')}

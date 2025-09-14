@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="bg-hero-gradient text-white section-padding min-h-screen flex items-center">
+    <section className="bg-hero-gradient text-white section-padding min-h-screen flex items-center overflow-x-clip">
       <div className="container mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -111,7 +111,7 @@ const Hero = () => {
                 alt="Jordan Lander - Web Developer"
                 className="relative rounded-3xl shadow-hero w-full max-w-md mx-auto lg:max-w-lg"
               />
-              <div className="absolute -bottom-6 -right-6 bg-white text-foreground p-4 rounded-2xl shadow-lg">
+              <div className="absolute -bottom-6 -right-6 bg-white text-foreground p-4 rounded-2xl shadow-lg max-w-[calc(100vw-2rem)]">
                 <div className="text-sm font-medium text-muted-foreground">Websites delivered</div>
                 <div className="text-2xl font-bold text-primary">100+</div>
               </div>

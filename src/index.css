@@ -135,13 +135,15 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: var(--font-family);
-  }
-  
-  html {
-    scroll-behavior: smooth;
+    overflow-x: clip;
   }
 }
 
