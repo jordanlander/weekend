@@ -1,22 +1,47 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-
-// This would typically come from a CMS or markdown files
-const blogPosts = [
-  {
-    title: "7 Mistakes You're Making with Your Business Website (and How to Fix Them)",
-    excerpt: "Your website is your digital storefront. It's working 24/7, making first impressions while you sleep. But most business websites are making critical mistakes that drive customers straight to competitors.",
-    date: "September 14, 2025",
-    readTime: "8 min read",
-    image: "https://cdn.marblism.com/sImsguOYOzd.webp",
-    slug: "7-website-mistakes"
-  }
-];
+import { getAllBlogPosts, type BlogPostMeta } from "@/utils/blog";
 
 const Blog = () => {
+  const [blogPosts, setBlogPosts] = useState<BlogPostMeta[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadPosts = async () => {
+      try {
+        const posts = await getAllBlogPosts();
+        setBlogPosts(posts);
+      } catch (error) {
+        console.error('Error loading blog posts:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    loadPosts();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <section className="section-padding">
+          <div className="container mx-auto text-center">
+            <div className="animate-pulse">
+              <div className="h-8 bg-muted rounded w-1/2 mx-auto mb-4"></div>
+              <div className="h-4 bg-muted rounded w-1/3 mx-auto"></div>
+            </div>
+          </div>
+        </section>
+        <Footer />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
