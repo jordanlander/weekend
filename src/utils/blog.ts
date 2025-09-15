@@ -1,5 +1,3 @@
-import matter from 'gray-matter';
-
 export interface BlogPostMeta {
   title: string;
   excerpt: string;
@@ -11,6 +9,44 @@ export interface BlogPostMeta {
 
 export interface BlogPost extends BlogPostMeta {
   content: string;
+}
+
+// Simple frontmatter parser for browser compatibility
+function parseFrontmatter(content: string): { data: Record<string, any>; content: string } {
+  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
+  const match = content.match(frontmatterRegex);
+  
+  if (!match) {
+    return { data: {}, content };
+  }
+  
+  const frontmatter = match[1];
+  const markdownContent = match[2];
+  
+  // Parse YAML-like frontmatter
+  const data: Record<string, any> = {};
+  const lines = frontmatter.split('\n');
+  
+  for (const line of lines) {
+    const trimmedLine = line.trim();
+    if (!trimmedLine || trimmedLine.startsWith('#')) continue;
+    
+    const colonIndex = trimmedLine.indexOf(':');
+    if (colonIndex === -1) continue;
+    
+    const key = trimmedLine.substring(0, colonIndex).trim();
+    let value = trimmedLine.substring(colonIndex + 1).trim();
+    
+    // Remove quotes if present
+    if ((value.startsWith('"') && value.endsWith('"')) || 
+        (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    
+    data[key] = value;
+  }
+  
+  return { data, content: markdownContent };
 }
 
 // Import all markdown files from the blog directory
@@ -28,10 +64,13 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
 
   const posts: BlogPost[] = [];
   
+  console.log('Loading blog posts...', Object.keys(blogModules));
+  
   for (const [path, moduleLoader] of Object.entries(blogModules)) {
     try {
+      console.log(`Loading blog post from ${path}`);
       const content = await moduleLoader() as string;
-      const { data, content: markdownContent } = matter(content);
+      const { data, content: markdownContent } = parseFrontmatter(content);
       
       // Extract slug from filename
       const slug = path.split('/').pop()?.replace('.md', '') || '';
@@ -46,6 +85,7 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
         content: markdownContent
       };
       
+      console.log(`Loaded post: ${post.title}`, post);
       posts.push(post);
     } catch (error) {
       console.error(`Error loading blog post from ${path}:`, error);
@@ -55,6 +95,7 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
   // Sort posts by date (newest first)
   posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   
+  console.log(`Loaded ${posts.length} blog posts:`, posts);
   cachedPosts = posts;
   return posts;
 }
