@@ -1,3 +1,12 @@
+---
+title: "Agency Websites Vs DIY Builders: Which Is Better For Your Local Business?"
+excerpt: "Sick of confusing website options? We break down the pros and cons for local small businesses: DIY builders vs hiring a pro, so you can make the right choice."
+date: "2025-09-15"
+readTime: "7 min read"
+image: "https://cdn.marblism.com/sImsguOYOzd.webp"
+slug: "agency-vs-diy"
+---
+
 # Agency Websites Vs DIY Builders: Which Is Better For Your Local Business?
 
 ![heroImage](https://cdn.marblism.com/MNlFDIvA2Zp.webp)
