@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import Terms from "./pages/Terms";
 import Refunds from "./pages/Refunds";
 import Privacy from "./pages/Privacy";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/book" element={<Book />} />
