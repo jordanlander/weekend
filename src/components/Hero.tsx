@@ -26,12 +26,12 @@ const Hero = () => {
             </h1>
             
             <p className="text-lead text-white/90 mb-6 max-w-lg">
-              Custom web design for small businesses everywhere. Your website launches in 48 hours, looks professional on any device, ranks on Google, and you own it completely. No monthly fees, no complicated contracts.
+              I help local businesses get online fast with effective websites that actually convert visitors into customers. Your website launches in 48 hours, looks great on phones and computers, shows up on Google, and you own it completely. No monthly fees, no complicated contracts.
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 max-w-lg">
               <p className="text-white/90 text-sm leading-relaxed">
-                <strong className="text-accent">One Weekend Websites</strong> specializes in fast, affordable web design for local businesses. Whether you're a contractor, restaurant, salon, or service provider, we create professional websites that help you compete online and attract more customers in your market.
+                <strong className="text-accent">One Weekend Websites</strong> helps local businesses get online fast. Whether you're a contractor, restaurant, salon, or service provider, I create websites that help you compete online and attract more customers in your market.
               </p>
             </div>
             
