@@ -22,12 +22,18 @@ const Hero = () => {
             </div>
             
             <h1 className="text-hero mb-6">
-              Your website, <span className="text-accent">live in 48 hours</span> — $499 flat.
+              Professional Websites for Pennsylvania Local Businesses — <span className="text-accent">live in 48 hours</span>, $499 flat.
             </h1>
             
-            <p className="text-lead text-white/90 mb-8 max-w-lg">
-              Your website, live in 48 hours. Looks great on any phone, shows up on Google, and you keep full ownership. Perfect for local businesses ready to grow.
+            <p className="text-lead text-white/90 mb-6 max-w-lg">
+              Custom web design for Pennsylvania small businesses. Your website launches in 48 hours, looks professional on any device, ranks on Google, and you own it completely. No monthly fees, no complicated contracts.
             </p>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 max-w-lg">
+              <p className="text-white/90 text-sm leading-relaxed">
+                <strong className="text-accent">One Weekend Websites</strong> specializes in fast, affordable web design for local Pennsylvania businesses. Whether you're a contractor, restaurant, salon, or service provider, we create professional websites that help you compete online and attract more customers in your area.
+              </p>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
