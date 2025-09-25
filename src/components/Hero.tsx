@@ -35,12 +35,6 @@ const Hero = () => {
               </p>
             </div>
             
-            <div className="bg-accent/10 backdrop-blur-sm rounded-xl p-4 mb-8 max-w-lg border border-accent/20">
-              <p className="text-white text-sm leading-relaxed">
-                <strong className="text-accent">Perfect for nonprofits & churches:</strong> Rally volunteers, accept donations, share your mission, and make an impact with a website that launches in 48 hours.
-              </p>
-            </div>
-            
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
                 className="btn-hero-cta"
