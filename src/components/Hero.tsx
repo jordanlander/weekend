@@ -31,7 +31,13 @@ const Hero = () => {
             
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 max-w-lg">
               <p className="text-white/90 text-sm leading-relaxed">
-                <strong className="text-accent">One Weekend Websites</strong> helps local businesses get online fast. Whether you're a contractor, restaurant, salon, or service provider, I create websites that help you compete online and attract more customers in your market.
+                <strong className="text-accent">One Weekend Websites</strong> helps local businesses, nonprofits, churches, and community organizations get online fast. Whether you're a contractor, restaurant, salon, service provider, or running a cause that matters, I create websites that help you reach more people and grow your impact.
+              </p>
+            </div>
+            
+            <div className="bg-accent/10 backdrop-blur-sm rounded-xl p-4 mb-8 max-w-lg border border-accent/20">
+              <p className="text-white text-sm leading-relaxed">
+                <strong className="text-accent">Perfect for nonprofits & churches:</strong> Rally volunteers, accept donations, share your mission, and make an impact with a website that launches in 48 hours.
               </p>
             </div>
             
