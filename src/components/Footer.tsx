@@ -197,7 +197,10 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-background/20 pt-8">
-          <div className="text-center">
+          <div className="text-center space-y-4">
+            <p className="text-background/80 text-base">
+              We're proud to help local businesses grow — and to help local artists share their creativity with the world.
+            </p>
             <p className="text-background/60 text-sm">
               © 2025 JCLander LLC • Lake City / Erie, PA
             </p>
