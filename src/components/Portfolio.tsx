@@ -2,13 +2,14 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Calendar, MapPin, Scissors, ShoppingBag, Leaf, Church, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
 import rebeccaCoppockImage from "@/assets/rebecca-coppock-dolls.jpg";
+import integrityEvCombo from "@/assets/integrity-ev-combo.jpg";
 
 const Portfolio = () => {
 const projects = [
     {
       title: "Integrity EV Solutions",
       category: "EV Charging",
-      image: "/lovable-uploads/8536377c-2b6f-4baa-a383-45f4a2877d6c.png",
+      image: integrityEvCombo,
       description: "Professional EV charging site with simple service options, quote, and contact flow.",
       testimonial: "Site + Google Ads boosted monthly installs.",
       website: "www.integrityevsolutions.com",
