@@ -58,7 +58,7 @@ const projects = [
                 <img 
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                  className="w-full h-48 object-cover object-top transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
                   {project.category}
