@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Calendar, MapPin, Scissors, ShoppingBag, Leaf, Church, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
-// Using real website screenshots provided by user
+import rebeccaCoppockImage from "@/assets/rebecca-coppock-dolls.jpg";
 
 const Portfolio = () => {
 const projects = [
@@ -24,12 +24,12 @@ const projects = [
       deliveryTime: "48 hours"
     },
     {
-      title: "Wiley Trucking",
-      category: "Transportation",
-      image: "/lovable-uploads/ffb49acd-fa56-4d52-9d59-be1e55e4f5dc.png",
-      description: "Services & request quote flow for local trucking company.",
-      testimonial: "More qualified leads in first month",
-      website: "www.wileytrucking.com",
+      title: "Little Panda Acts of Kindness",
+      category: "Handmade Artist",
+      image: rebeccaCoppockImage,
+      description: "Erie-based recycled-fabric doll artist creating heartfelt 'Love Dolls' that embrace imperfection and emotional storytelling.",
+      testimonial: "Finally have a shop that feels like my art",
+      website: "little-panda-acts-of-kindness.square.site",
       deliveryTime: "48 hours"
     }
   ];
