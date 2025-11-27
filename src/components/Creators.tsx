@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brush, Scissors, Camera, Pen } from "lucide-react";
 import { Link } from "react-router-dom";
-import creativeWorkspace from "@/assets/creative-workspace.jpg";
+import rebeccaWithDolls from "@/assets/rebecca-with-dolls.jpg";
 
 const Creators = () => {
   return (
@@ -12,8 +12,8 @@ const Creators = () => {
           <div className="animate-fade-in order-2 lg:order-1">
             <div className="relative">
               <img 
-                src={creativeWorkspace}
-                alt="Creative workspace with artistic tools and materials"
+                src={rebeccaWithDolls}
+                alt="Rebecca Coppock, local doll artist, with her handmade recycled-fabric dolls"
                 className="rounded-2xl shadow-lg w-full"
               />
               {/* Decorative icons */}
