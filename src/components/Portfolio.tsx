@@ -29,7 +29,7 @@ const projects = [
       image: rebeccaCoppockImage,
       description: "Erie-based recycled-fabric doll artist creating heartfelt 'Love Dolls' that embrace imperfection and emotional storytelling.",
       testimonial: "Finally have a shop that feels like my art",
-      website: "little-panda-acts-of-kindness.square.site",
+      website: "rebeccacoppock.com",
       deliveryTime: "48 hours"
     }
   ];
