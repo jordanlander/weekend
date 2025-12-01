@@ -12,7 +12,7 @@ export interface BlogPost extends BlogPostMeta {
 }
 
 // Simple frontmatter parser for browser compatibility
-function parseFrontmatter(content: string): { data: Record<string, any>; content: string } {
+function parseFrontmatter(content: string): { data: Record<string, string>; content: string } {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const match = content.match(frontmatterRegex);
   
@@ -24,7 +24,7 @@ function parseFrontmatter(content: string): { data: Record<string, any>; content
   const markdownContent = match[2];
   
   // Parse YAML-like frontmatter
-  const data: Record<string, any> = {};
+  const data: Record<string, string> = {};
   const lines = frontmatter.split('\n');
   
   for (const line of lines) {
@@ -50,18 +50,12 @@ function parseFrontmatter(content: string): { data: Record<string, any>; content
 }
 
 // Import all markdown files from the blog directory
-const blogModules = import.meta.glob('../content/blog/*.md', { 
-  query: '?raw', 
-  import: 'default' 
+const blogModules = import.meta.glob('../content/blog/*.md', {
+  query: '?raw',
+  import: 'default'
 });
 
-let cachedPosts: BlogPost[] | null = null;
-
 export async function getAllBlogPosts(): Promise<BlogPost[]> {
-  if (cachedPosts) {
-    return cachedPosts;
-  }
-
   const posts: BlogPost[] = [];
   
   console.log('Loading blog posts...', Object.keys(blogModules));
@@ -96,16 +90,10 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
   posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   
   console.log(`Loaded ${posts.length} blog posts:`, posts);
-  cachedPosts = posts;
   return posts;
 }
 
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {
   const posts = await getAllBlogPosts();
   return posts.find(post => post.slug === slug) || null;
-}
-
-// Clear cache when needed (useful for development)
-export function clearBlogCache() {
-  cachedPosts = null;
 }
